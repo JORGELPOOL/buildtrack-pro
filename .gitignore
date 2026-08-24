@@ -1,0 +1,29 @@
+# Environment variables
+.env
+.env.*
+!.env.example
+backend/.env
+
+# Node
+node_modules/
+backend/node_modules/
+npm-debug.log*
+
+# Flutter/Dart
+.dart_tool/
+.packages
+.pub/
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Generated/uploaded files
+backend/uploads/
