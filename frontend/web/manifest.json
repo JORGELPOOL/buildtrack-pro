@@ -1,0 +1,10 @@
+{
+  "name": "BuildTrack Pro",
+  "short_name": "BuildTrack Pro",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0B5ED7",
+  "theme_color": "#00897B",
+  "description": "Construction project management frontend.",
+  "orientation": "portrait-primary"
+}
