@@ -27,3 +27,11 @@ Thumbs.db
 
 # Generated/uploaded files
 backend/uploads/
+# Local Netlify folder
+.netlify
+
+# Flutter generated metadata
+.metadata
+
+# Build/deployment archives
+*.zip
