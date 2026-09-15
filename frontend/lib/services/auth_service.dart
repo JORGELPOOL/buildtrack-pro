@@ -3,9 +3,7 @@ import 'package:http/http.dart' as http;
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthService {
-  static const apiUrl = String.fromEnvironment('API_URL',
-      defaultValue:
-          'https://buildtrack-pro-production-7a75.up.railway.app/api');
+  static const apiUrl = String.fromEnvironment('API_URL', defaultValue: 'https://buildtrack-pro-production-7a75.up.railway.app/api');
 
   Future<Map<String, dynamic>> login(String email, String password) async {
     final res = await http.post(Uri.parse('$apiUrl/auth/login'),
@@ -19,8 +17,7 @@ class AuthService {
     return data;
   }
 
-  Future<String?> getToken() async =>
-      (await SharedPreferences.getInstance()).getString('token');
+  Future<String?> getToken() async => (await SharedPreferences.getInstance()).getString('token');
 
   Future<Map<String, dynamic>?> getUser() async {
     final raw = (await SharedPreferences.getInstance()).getString('user');
